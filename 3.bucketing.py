@@ -4,7 +4,7 @@ import os
 import json
 
 
-maxBucketNum=8500 # 100 times of reducer number is enought to control skew cell to 1 percent of average load per node, if not extreamly skew. To avoid huge bucketing number, and improve shuffle accurate.
+targetBucketNum=8500 # 100 times of reducer number is enought to control skew cell to 1 percent of average load per node, if not extreamly skew. To avoid huge bucketing number, and improve shuffle accurate.
 rowindexFolder="stats/rowindex/"
 bucketFolder="stats/buckets/"
 
@@ -13,25 +13,22 @@ for dirName, subdirList, fileList in os.walk(rowindexFolder):
 		with open(rowindexFolder+fname) as data_file:
 	    		stats=json.load(data_file)
 			if not stats['interleave']:
-				stats["buckets-schema"]=("min,max,cnt,sum")
+				stats["buckets-schema"]=stats.pop("entries-schema")
 				stats["buckets"]=stats.pop("entries")
+				if stats['type'] in ('int','tinyint','smallint','bigint'):
+                        		stats["buckets-schema"]="min,max,cnt,density"
+					for i in range(len(stats["buckets"])):
+						stats["buckets"][i][3]=float(stats["buckets"][i][2])/(stats["buckets"][i][1]-stats["buckets"][i][0])
 				continue
-	    		if stats['type'] in ('int','tinyint','smallint','bigint'):
-	    			stats['step']=(stats['max']-stats['min']+1)/float(stats['cnt'])*stats['entrySize']
-				stats['step']=(1 if stats['step']<1 else long(stats['step']))
-			elif stats['type'] in ('float','double','decimal'):
-				#todo:Decimal()
-				stats['step']=(stats['max']-stats['min'])/float(stats['cnt'])*stats['entrySize']
+			if stats['type'] in ('int','tinyint','smallint','bigint'):
+	    			stats['step']=(stats['max']-stats['min'])/targetBucketNum+1
+			#elif stats['type'] in ('float','double','decimal(?,?)'):
+	    		#	stats['step']=(stats['max']-stats['min'])/targetBucketNum
 			else:
 				#todo Date/Time Types
 				print "Skip "+fname+": "+stats['type']+" is unsupported by far!"
 				continue
-			print fname
-			print 'step is '+str(stats['step'])
-			stepMin=(stats['max']-stats['min'])/maxBucketNum
-			if stepMin>stats['step']:
-				stats['step']=stepMin
-				print 'step reset to '+str(stepMin)
+			print fname+': step is '+str(stats['step'])
 			bucket0=int(stats['min']/stats['step'])
 			bucketCnt=int(stats['max']/stats['step'])-bucket0+1
 			#todo: fix [min,max), avoid using max
@@ -64,5 +61,9 @@ for dirName, subdirList, fileList in os.walk(rowindexFolder):
                                 if i%lenpar==1:
                                         print str(i/lenpar)+"%"
 			del stats["entries"]
+			del stats["entries-schema"]
+			stats["buckets-schema"]="min,max,cnt,density"
+			for i in range(len(stats["buckets"])):
+				stats["buckets"][i].append(float(stats["buckets"][i][2])/(stats["buckets"][i][1]-stats["buckets"][i][0]))
 		with open(bucketFolder+fname,'w') as bucketFile:
 	        	json.dump(stats,bucketFile)
