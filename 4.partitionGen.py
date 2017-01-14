@@ -3,9 +3,24 @@ import re
 import os
 import json
 
-joinedFields=['store_sales.ss_item_sk','item.i_item_sk']# from bigbench q01
+#TODO: and join need to re-grep rowindex
+#web_sales.ws_order_number=web_returns.wr_order_number and web_sales.ws_item_sk = web_returns.wr_item_sk #q16
+#customer_address.ca_address_sk = customer.c_current_addr_sk and customer.c_customer_sk = store_sales.ss_customer_sk #q07
+#TODO: date keys
+#joinedFields=["web_sales.ws_sold_date_sk","date_dim.d_date_sk"] #q16\q11
+#joinedFields=["store_returns.sr_returned_date_sk","date_dim.d_date_sk"] #q21
+
+#normal keys
+#joinedFields=["web_sales.ws_item_sk","item.i_item_sk"] #q29\q24\q16:
+joinedFields=["web_sales.ws_item_sk","item.i_item_sk"] #q29:
+#joinedFields=["store_sales.ss_item_sk","item.i_item_sk"] #q26\q12\q01\q07
+#joinedFields=["web_sales.ws_warehouse_sk","warehouse.w_warehouse_sk"] #q16
+#joinedFields=["web_clickstreams.wcs_item_sk","item.i_item_sk"] #q12
+#joinedFields=["web_clickstreams.wcs_user_sk","store_sales.ss_customer_sk"] #q12
+#joinedFields=["product_reviews.pr_item_sk","web_sales.ws_item_sk"] #q11
+
 bucketsFolder='stats/buckets/'
-reduceNum=12
+reduceNum=1000
 debug=True
 
 totalWorkload=0

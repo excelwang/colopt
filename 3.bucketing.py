@@ -4,7 +4,7 @@ import os
 import json
 
 
-targetBucketNum=8500 # 100 times of reducer number is enought to control skew cell to 1 percent of average load per node, if not extreamly skew. To avoid huge bucketing number, and improve shuffle accurate.
+targetBucketNum=14300 # 100 times of reducer number is enought to control skew cell to 1 percent of average load per node, if not extreamly skew. To avoid huge bucketing number, and improve shuffle accurate.
 rowindexFolder="stats/rowindex/"
 bucketFolder="stats/buckets/"
 

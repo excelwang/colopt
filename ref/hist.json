@@ -1,0 +1,441 @@
+
+Logging initialized using configuration in jar:file:/opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/jars/hive-common-1.1.0-cdh5.8.3.jar!/hive-log4j.properties
+OK
+Time taken: 1.835 seconds
+Query ID = hdfs_20170114113030_4859270d-d569-482a-af7a-b2e238a842a1
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0272, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0272/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0272
+Hadoop job information for Stage-1: number of mappers: 245; number of reducers: 1
+2017-01-14 11:30:40,815 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:30:56,091 Stage-1 map = 2%,  reduce = 0%, Cumulative CPU 191.7 sec
+2017-01-14 11:30:57,153 Stage-1 map = 10%,  reduce = 0%, Cumulative CPU 789.74 sec
+2017-01-14 11:30:59,296 Stage-1 map = 16%,  reduce = 0%, Cumulative CPU 999.4 sec
+2017-01-14 11:31:00,346 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 1213.92 sec
+2017-01-14 11:31:01,409 Stage-1 map = 30%,  reduce = 0%, Cumulative CPU 1282.53 sec
+2017-01-14 11:31:02,491 Stage-1 map = 45%,  reduce = 0%, Cumulative CPU 1466.58 sec
+2017-01-14 11:31:03,620 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 1590.27 sec
+2017-01-14 11:31:12,184 Stage-1 map = 59%,  reduce = 0%, Cumulative CPU 1621.29 sec
+2017-01-14 11:31:13,239 Stage-1 map = 61%,  reduce = 0%, Cumulative CPU 1775.36 sec
+2017-01-14 11:31:14,288 Stage-1 map = 63%,  reduce = 0%, Cumulative CPU 1891.84 sec
+2017-01-14 11:31:15,334 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 2117.02 sec
+2017-01-14 11:31:16,389 Stage-1 map = 73%,  reduce = 0%, Cumulative CPU 2332.4 sec
+2017-01-14 11:31:17,436 Stage-1 map = 78%,  reduce = 0%, Cumulative CPU 2419.34 sec
+2017-01-14 11:31:18,477 Stage-1 map = 86%,  reduce = 0%, Cumulative CPU 2548.69 sec
+2017-01-14 11:31:19,554 Stage-1 map = 96%,  reduce = 0%, Cumulative CPU 2655.78 sec
+2017-01-14 11:31:20,595 Stage-1 map = 99%,  reduce = 0%, Cumulative CPU 2680.11 sec
+2017-01-14 11:31:21,637 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2690.47 sec
+2017-01-14 11:31:26,844 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2693.81 sec
+MapReduce Total cumulative CPU time: 44 minutes 53 seconds 810 msec
+Ended Job = job_1483946879430_0272
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 245  Reduce: 1   Cumulative CPU: 2693.81 sec   HDFS Read: 3140494016 HDFS Write: 2578 SUCCESS
+Total MapReduce CPU Time Spent: 44 minutes 53 seconds 810 msec
+OK
+[{"x":3319.1763004016943,"y":1.4111505E7},{"x":10028.754375721493,"y":7.4863768E7},{"x":16807.483373601302,"y":1.3473092E7},{"x":23363.186284973184,"y":1.297708E7},{"x":29222.551123717203,"y":1.0944568E7},{"x":35379.50464504434,"y":1.4293082E7},{"x":42490.70159263438,"y":1.480189E7},{"x":49518.89970478708,"y":1.4106775E7},{"x":56644.48980994982,"y":1.4826571E7},{"x":63888.00233740634,"y":1.4601654E7},{"x":71061.48053174488,"y":1.4643711E7},{"x":77582.11149496413,"y":1.2145562E7},{"x":83925.994722868,"y":1.3684327E7},{"x":90819.31681719898,"y":1.4574597E7},{"x":97205.95516403147,"y":1.1466709E7},{"x":102365.52019999381,"y":9810696.0},{"x":108092.13319851398,"y":1.3643951E7},{"x":114248.50207716458,"y":1.1534954E7},{"x":120725.39191608693,"y":1.4928142E7},{"x":128047.12808207309,"y":1.4872456E7},{"x":135243.46881187928,"y":1.4402054E7},{"x":142491.49029552902,"y":1.4722235E7},{"x":149926.71181612875,"y":1.3863288E7},{"x":157284.83448853376,"y":1.4343973E7},{"x":164639.2825469924,"y":1.394052E7},{"x":171637.18735108877,"y":1.3186179E7},{"x":178706.15554630142,"y":1.3860966E7},{"x":184862.3452429061,"y":1.028254E7},{"x":190841.30713082408,"y":1.297087E7},{"x":197866.01120833727,"y":1.4122434E7},{"x":204302.88772912542,"y":1.1032238E7},{"x":210568.60334687185,"y":1.2976832E7},{"x":216629.0948304434,"y":1.0519607E7},{"x":222637.35971704067,"y":1.2819098E7},{"x":228776.98783260965,"y":1.1101888E7},{"x":235016.46304813336,"y":1.3023104E7},{"x":241344.09293482517,"y":1.1375133E7},{"x":247851.05698357974,"y":1.3944245E7},{"x":254793.82042254545,"y":1.3120333E7},{"x":261938.11575620555,"y":1.4557794E7},{"x":269346.925795937,"y":1.4101088E7},{"x":276418.29447394103,"y":1.3212945E7},{"x":282811.9261840932,"y":1.1725115E7},{"x":288931.4467753963,"y":1.3766096E7},{"x":295019.97578405164,"y":1.1504567E7},{"x":300978.0170741285,"y":1.3263986E7},{"x":306973.6749567892,"y":1.1803766E7},{"x":313451.40870030405,"y":1.5091885E7},{"x":320400.8902561542,"y":1.4087642E7},{"x":327350.59624376363,"y":1.5113748E7},{"x":334615.88919360464,"y":1.5158728E7},{"x":342027.57301881025,"y":1.5774353E7},{"x":349615.5899366742,"y":1.5830155E7},{"x":357034.4242980676,"y":1.5282087E7},{"x":364174.2080378381,"y":1.4516114E7},{"x":371324.2969176527,"y":1.5295975E7},{"x":378727.1252179404,"y":1.5965867E7},{"x":386069.61618641444,"y":1.4783854E7},{"x":392393.89983720717,"y":1.1651043E7},{"x":398443.88771979394,"y":1.3907349E7},{"x":404531.6871954037,"y":1.1635932E7},{"x":410662.55585316266,"y":1.408973E7},{"x":416810.0301251795,"y":1.1599997E7},{"x":422939.31877669966,"y":1.4089499E7},{"x":429777.1016959836,"y":1.5411936E7},{"x":437044.5644532302,"y":1.6068667E7},{"x":444421.25918189524,"y":1.6015239E7},{"x":451766.01094872813,"y":1.5992906E7},{"x":459161.3112971465,"y":1.5999835E7},{"x":465581.10296678497,"y":1.2076642E7},{"x":471590.35776128795,"y":1.4246069E7},{"x":477538.3956820387,"y":1.200173E7},{"x":483614.7054455982,"y":1.4431178E7},{"x":489899.88557907863,"y":1.2877645E7},{"x":496176.807240219,"y":1.4566768E7},{"x":502157.969960335,"y":1.1919341E7},{"x":507222.4512313936,"y":1.0787452E7},{"x":512960.48019403435,"y":1.4465415E7},{"x":519241.236711484,"y":1.3291628E7},{"x":525451.4848641768,"y":1.4014203E7},{"x":531412.1631362815,"y":1.2449444E7},{"x":537860.7632387897,"y":1.6168168E7},{"x":545186.9255784232,"y":1.635652E7},{"x":552806.7758572095,"y":1.7823036E7},{"x":560104.7572136049,"y":1.3991789E7}]
+Time taken: 60.315 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113131_8b6be0a4-79ab-4a7f-b417-8bc946e07977
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0273, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0273/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0273
+Hadoop job information for Stage-1: number of mappers: 4; number of reducers: 1
+2017-01-14 11:31:36,977 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:31:44,271 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 10.74 sec
+2017-01-14 11:31:51,602 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 13.17 sec
+MapReduce Total cumulative CPU time: 13 seconds 170 msec
+Ended Job = job_1483946879430_0273
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 4  Reduce: 1   Cumulative CPU: 13.17 sec   HDFS Read: 150111 HDFS Write: 1971 SUCCESS
+Total MapReduce CPU Time Spent: 13 seconds 170 msec
+OK
+[{"x":4024.500000000001,"y":8050.0},{"x":10432.500000000004,"y":4766.0},{"x":16470.000000000004,"y":7309.0},{"x":22137.0,"y":4025.0},{"x":28174.499999999978,"y":8050.0},{"x":34212.0,"y":4025.0},{"x":38686.00000000001,"y":4923.0},{"x":44723.500000000015,"y":7152.0},{"x":52324.5,"y":8050.0},{"x":60374.5,"y":8050.0},{"x":68424.5,"y":8050.0},{"x":74462.00000000001,"y":4025.0},{"x":80499.50000000003,"y":8050.0},{"x":88371.49999999997,"y":7694.0},{"x":94409.00000000003,"y":4381.0},{"x":100296.0,"y":7393.0},{"x":106333.49999999999,"y":4682.0},{"x":112699.4999999997,"y":8050.0},{"x":118737.0,"y":4025.0},{"x":124774.5,"y":8050.0},{"x":130812.00000000001,"y":4025.0},{"x":135977.99999999997,"y":6307.0},{"x":142015.50000000003,"y":5768.0},{"x":148924.5,"y":8050.0},{"x":156974.4999999999,"y":8050.0},{"x":163836.5,"y":5674.0},{"x":169349.49999999977,"y":5352.0},{"x":174562.50000000006,"y":5074.0},{"x":179112.00000000006,"y":4025.0},{"x":185149.5,"y":8050.0},{"x":193199.49999999994,"y":8050.0},{"x":201249.4999999998,"y":8050.0},{"x":207287.0,"y":4025.0},{"x":213324.5,"y":8050.0},{"x":220681.99999999994,"y":6665.0},{"x":225878.4999999997,"y":3728.0},{"x":230170.0,"y":4855.0},{"x":235187.49999999988,"y":5180.0},{"x":240624.0,"y":5693.0},{"x":247277.49999999983,"y":7614.0},{"x":253097.99999999962,"y":4027.0},{"x":258369.0000000002,"y":6515.0},{"x":265650.5,"y":8048.0},{"x":273699.49999999965,"y":8050.0},{"x":281749.4999999999,"y":8050.0},{"x":289799.49999999953,"y":8050.0},{"x":297849.5000000001,"y":8050.0},{"x":303896.0,"y":4043.0},{"x":309932.99999999953,"y":8031.0},{"x":317973.9999999991,"y":8051.0},{"x":326024.49999999977,"y":8050.0},{"x":333704.5,"y":7310.0},{"x":339741.99999999977,"y":4765.0},{"x":346149.4999999999,"y":8050.0},{"x":354111.49999999965,"y":7874.0},{"x":360148.9999999999,"y":4201.0},{"x":366274.4999999999,"y":8050.0},{"x":372311.9999999999,"y":4025.0},{"x":378349.4999999994,"y":8050.0},{"x":386399.49999999965,"y":8050.0},{"x":392436.9999999996,"y":4025.0},{"x":398474.4999999995,"y":8050.0},{"x":406524.4999999999,"y":8050.0},{"x":414573.49999999895,"y":8048.0},{"x":422623.49999999907,"y":8052.0},{"x":430674.4999999999,"y":8050.0},{"x":436711.99999999994,"y":4025.0},{"x":442749.49999999994,"y":8050.0},{"x":450799.4999999999,"y":8050.0},{"x":458849.5,"y":8050.0},{"x":465199.99999999965,"y":4651.0},{"x":471800.9999999985,"y":8551.0},{"x":479537.99999999924,"y":6923.0},{"x":485011.99999999965,"y":4025.0},{"x":491049.49999999895,"y":8050.0},{"x":497087.0000000002,"y":4025.0},{"x":503124.5,"y":8050.0},{"x":511174.4999999992,"y":8050.0},{"x":519224.4999999997,"y":8050.0},{"x":527274.4999999998,"y":8050.0},{"x":533617.9999999985,"y":4637.0},{"x":539655.4999999999,"y":7438.0},{"x":545699.9999999988,"y":4651.0},{"x":551737.4999999979,"y":7424.0},{"x":559483.4999999995,"y":8068.0}]
+Time taken: 23.597 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113131_a02ab47d-a28e-4f0a-9806-fa29c1e96ced
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0274, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0274/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0274
+Hadoop job information for Stage-1: number of mappers: 170; number of reducers: 1
+2017-01-14 11:32:00,858 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:32:15,865 Stage-1 map = 1%,  reduce = 0%, Cumulative CPU 86.51 sec
+2017-01-14 11:32:16,955 Stage-1 map = 8%,  reduce = 0%, Cumulative CPU 784.86 sec
+2017-01-14 11:32:18,024 Stage-1 map = 9%,  reduce = 0%, Cumulative CPU 802.07 sec
+2017-01-14 11:32:19,090 Stage-1 map = 11%,  reduce = 0%, Cumulative CPU 871.37 sec
+2017-01-14 11:32:20,150 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 1229.07 sec
+2017-01-14 11:32:22,295 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 1324.2 sec
+2017-01-14 11:32:23,371 Stage-1 map = 37%,  reduce = 0%, Cumulative CPU 1650.98 sec
+2017-01-14 11:32:24,420 Stage-1 map = 42%,  reduce = 0%, Cumulative CPU 1688.45 sec
+2017-01-14 11:32:25,477 Stage-1 map = 62%,  reduce = 0%, Cumulative CPU 1863.33 sec
+2017-01-14 11:32:26,532 Stage-1 map = 82%,  reduce = 0%, Cumulative CPU 2062.91 sec
+2017-01-14 11:32:27,579 Stage-1 map = 84%,  reduce = 0%, Cumulative CPU 2071.98 sec
+2017-01-14 11:32:34,864 Stage-1 map = 86%,  reduce = 0%, Cumulative CPU 2148.44 sec
+2017-01-14 11:32:35,908 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 2259.36 sec
+2017-01-14 11:32:37,986 Stage-1 map = 89%,  reduce = 0%, Cumulative CPU 2302.38 sec
+2017-01-14 11:32:39,028 Stage-1 map = 90%,  reduce = 28%, Cumulative CPU 2340.98 sec
+2017-01-14 11:32:41,108 Stage-1 map = 93%,  reduce = 28%, Cumulative CPU 2409.57 sec
+2017-01-14 11:32:42,150 Stage-1 map = 99%,  reduce = 29%, Cumulative CPU 2439.46 sec
+2017-01-14 11:32:43,189 Stage-1 map = 100%,  reduce = 29%, Cumulative CPU 2441.67 sec
+2017-01-14 11:32:45,266 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2443.82 sec
+MapReduce Total cumulative CPU time: 40 minutes 43 seconds 820 msec
+Ended Job = job_1483946879430_0274
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 170  Reduce: 1   Cumulative CPU: 2443.82 sec   HDFS Read: 3133196541 HDFS Write: 2577 SUCCESS
+Total MapReduce CPU Time Spent: 40 minutes 43 seconds 820 msec
+OK
+[{"x":3319.142695432341,"y":1.4110753E7},{"x":10025.916870674499,"y":7.4786352E7},{"x":16767.233402320555,"y":1.343727E7},{"x":23599.082172947386,"y":1.396748E7},{"x":28857.63561809365,"y":7423025.0},{"x":33542.6855456169,"y":1.2310854E7},{"x":40277.94103435232,"y":1.5019813E7},{"x":47494.681514967786,"y":1.460295E7},{"x":54740.32636697979,"y":1.4931054E7},{"x":61924.23067114291,"y":1.4247053E7},{"x":68961.97229865419,"y":1.4371901E7},{"x":75837.26161861407,"y":1.3450507E7},{"x":82325.36636432975,"y":1.3517162E7},{"x":89004.64235202897,"y":1.3635545E7},{"x":95152.94704807318,"y":1.1393712E7},{"x":100913.91864789014,"y":1.2715331E7},{"x":106855.15308276091,"y":1.1414329E7},{"x":112279.80215877444,"y":1.0504292E7},{"x":117263.71542479088,"y":9896361.0},{"x":122973.68540258422,"y":1.3631927E7},{"x":129776.39860228097,"y":1.4000956E7},{"x":136090.3740557117,"y":1.1897193E7},{"x":142532.43605256223,"y":1.3723779E7},{"x":149563.13728095387,"y":1.3241815E7},{"x":156523.11079447862,"y":1.3446392E7},{"x":163410.6583312898,"y":1.2936508E7},{"x":169886.66166666552,"y":1.2331531E7},{"x":176394.84585922884,"y":1.2681648E7},{"x":182841.67413544064,"y":1.2093506E7},{"x":189168.3351544965,"y":1.2861555E7},{"x":195883.72747343098,"y":1.3070355E7},{"x":202938.4950546465,"y":1.4173306E7},{"x":210221.94255955177,"y":1.3986503E7},{"x":217659.28416352006,"y":1.4755476E7},{"x":224997.05826238,"y":1.3745851E7},{"x":232106.40475482706,"y":1.3950875E7},{"x":239409.45643444208,"y":1.4374842E7},{"x":246723.88469628015,"y":1.3951909E7},{"x":253520.9223943472,"y":1.2350286E7},{"x":260100.2829560721,"y":1.3348807E7},{"x":267100.67811521806,"y":1.3671044E7},{"x":273948.0167126179,"y":1.2783993E7},{"x":279834.53480782197,"y":1.0015306E7},{"x":285257.88510106667,"y":1.1837734E7},{"x":291387.24873897684,"y":1.3755303E7},{"x":298273.44071791717,"y":1.484042E7},{"x":305394.1269538499,"y":1.4746461E7},{"x":312526.7685245171,"y":1.5038664E7},{"x":319869.33791352867,"y":1.5717379E7},{"x":327291.3927482021,"y":1.5305035E7},{"x":334632.71057314234,"y":1.5454326E7},{"x":341146.0733316978,"y":1.1661669E7},{"x":347173.7955728594,"y":1.3602641E7},{"x":353319.23021459294,"y":1.1945307E7},{"x":359786.422823796,"y":1.5070455E7},{"x":366802.5466144483,"y":1.4350872E7},{"x":373760.28800360486,"y":1.4727701E7},{"x":380099.6814518893,"y":1.2100775E7},{"x":386613.7093228279,"y":1.5101007E7},{"x":393865.02628130966,"y":1.5369515E7},{"x":401007.57842691126,"y":1.4560984E7},{"x":408019.4004087966,"y":1.4840593E7},{"x":415178.0388863339,"y":1.5126291E7},{"x":421786.49182516854,"y":1.2457811E7},{"x":427873.3284123367,"y":1.4104866E7},{"x":434516.10891106393,"y":1.4403284E7},{"x":440865.5881947155,"y":1.3272819E7},{"x":447397.5506099077,"y":1.4917563E7},{"x":454306.7229096147,"y":1.5036931E7},{"x":461459.58090593736,"y":1.6148172E7},{"x":468282.50268603355,"y":1.3632362E7},{"x":474320.71399866836,"y":1.3111981E7},{"x":480143.5478446198,"y":1.213708E7},{"x":486167.90613332624,"y":1.4308987E7},{"x":493113.0270380507,"y":1.5901478E7},{"x":500451.1363333457,"y":1.6501128E7},{"x":507732.5959698531,"y":1.5711887E7},{"x":514295.28639990976,"y":1.3515308E7},{"x":520938.5260133369,"y":1.5637305E7},{"x":528080.3517829464,"y":1.5932077E7},{"x":535143.3130774095,"y":1.5344352E7},{"x":542118.1794095491,"y":1.5433543E7},{"x":548024.7963336599,"y":1.1286902E7},{"x":553620.1230410455,"y":1.3825508E7},{"x":560078.5199599374,"y":1.4105554E7}]
+Time taken: 53.606 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113232_4251bc3e-ae8c-4249-adce-9d447387f092
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0275, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0275/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0275
+Hadoop job information for Stage-1: number of mappers: 245; number of reducers: 1
+2017-01-14 11:32:54,665 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:33:09,559 Stage-1 map = 3%,  reduce = 0%, Cumulative CPU 80.98 sec
+2017-01-14 11:33:10,631 Stage-1 map = 34%,  reduce = 0%, Cumulative CPU 766.85 sec
+2017-01-14 11:33:11,708 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 921.62 sec
+2017-01-14 11:33:21,301 Stage-1 map = 60%,  reduce = 0%, Cumulative CPU 955.94 sec
+2017-01-14 11:33:22,367 Stage-1 map = 64%,  reduce = 0%, Cumulative CPU 1032.27 sec
+2017-01-14 11:33:23,412 Stage-1 map = 71%,  reduce = 0%, Cumulative CPU 1126.59 sec
+2017-01-14 11:33:24,450 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 1388.66 sec
+2017-01-14 11:33:25,490 Stage-1 map = 96%,  reduce = 0%, Cumulative CPU 1505.51 sec
+2017-01-14 11:33:26,530 Stage-1 map = 99%,  reduce = 0%, Cumulative CPU 1568.37 sec
+2017-01-14 11:33:27,570 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1568.72 sec
+2017-01-14 11:33:32,768 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1572.04 sec
+MapReduce Total cumulative CPU time: 26 minutes 12 seconds 40 msec
+Ended Job = job_1483946879430_0275
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 245  Reduce: 1   Cumulative CPU: 1572.04 sec   HDFS Read: 836922408 HDFS Write: 2156 SUCCESS
+Total MapReduce CPU Time Spent: 26 minutes 12 seconds 40 msec
+OK
+[{"x":0.0,"y":4.7092211E7},{"x":1.0,"y":4.7085454E7},{"x":2.0,"y":4.7095575E7},{"x":2.9999999999999996,"y":4.5351189E7},{"x":3.0,"y":1734921.0},{"x":3.999999999999999,"y":1139719.0},{"x":4.0,"y":4.5939133E7},{"x":4.999999999999998,"y":4.2073588E7},{"x":4.999999999999999,"y":1349346.0},{"x":5.0,"y":195218.0},{"x":5.000000000000001,"y":3473268.0},{"x":5.999999999999998,"y":2.017181E7},{"x":6.0,"y":1.0608101E7},{"x":6.000000000000002,"y":1.6304924E7},{"x":6.999999999999998,"y":2.4031684E7},{"x":7.0,"y":194233.0},{"x":7.000000000000001,"y":1346947.0},{"x":7.000000000000001,"y":5592341.0},{"x":7.000000000000002,"y":1.5923164E7},{"x":8.0,"y":4.7098986E7},{"x":8.999999999999998,"y":2.3433719E7},{"x":9.0,"y":195073.0},{"x":9.000000000000002,"y":2.3468247E7},{"x":9.999999999999996,"y":2.007837E7},{"x":9.999999999999998,"y":4049854.0},{"x":10.0,"y":771645.0},{"x":10.000000000000002,"y":1.8938056E7},{"x":10.000000000000004,"y":3248004.0},{"x":10.999999999999998,"y":7347970.0},{"x":11.0,"y":194214.0},{"x":11.000000000000002,"y":8873051.0},{"x":11.000000000000004,"y":3.0673035E7},{"x":11.999999999999996,"y":1.7099333E7},{"x":11.999999999999998,"y":1736499.0},{"x":12.0,"y":580963.0},{"x":12.000000000000002,"y":6212558.0},{"x":12.000000000000004,"y":2.1469797E7},{"x":12.999999999999998,"y":3278689.0},{"x":13.000000000000004,"y":4.3819632E7},{"x":13.999999999999996,"y":3054084.0},{"x":13.999999999999998,"y":3.8249783E7},{"x":14.0,"y":1156603.0},{"x":14.000000000000002,"y":4633443.0},{"x":14.999999999999996,"y":2.2557559E7},{"x":14.999999999999998,"y":2313924.0},{"x":15.0,"y":1158349.0},{"x":15.000000000000002,"y":9758091.0},{"x":15.000000000000004,"y":1.1304889E7},{"x":16.0,"y":4.7091145E7},{"x":16.999999999999996,"y":2.7259725E7},{"x":17.0,"y":385809.0},{"x":17.000000000000004,"y":1.9442703E7},{"x":17.999999999999996,"y":2.8199086E7},{"x":18.0,"y":1544321.0},{"x":18.000000000000004,"y":1.7346395E7},{"x":18.999999999999996,"y":2.9415035E7},{"x":19.0,"y":387249.0},{"x":19.000000000000004,"y":1.0411887E7},{"x":19.000000000000007,"y":6890534.0},{"x":19.999999999999996,"y":9206347.0},{"x":20.0,"y":3859993.0},{"x":20.000000000000004,"y":1.4282872E7},{"x":20.000000000000007,"y":1.9743926E7},{"x":20.999999999999996,"y":9689166.0},{"x":21.0,"y":772033.0},{"x":21.000000000000004,"y":4433746.0},{"x":21.000000000000007,"y":3.2192482E7},{"x":21.999999999999993,"y":1.0811077E7},{"x":21.999999999999996,"y":769892.0},{"x":22.0,"y":963202.0},{"x":22.000000000000004,"y":3277634.0},{"x":22.000000000000007,"y":3.1265407E7},{"x":22.999999999999993,"y":2.0924913E7},{"x":22.999999999999996,"y":7522438.0},{"x":23.0,"y":1157657.0},{"x":23.000000000000004,"y":9814067.0},{"x":23.000000000000007,"y":7673568.0},{"x":23.999999999999993,"y":1.2641884E7},{"x":23.999999999999996,"y":2.3525275E7},{"x":24.0,"y":1929177.0},{"x":24.000000000000004,"y":2169610.0},{"x":24.000000000000007,"y":6816776.0},{"x":24.999999999999993,"y":2.664881E7},{"x":25.0,"y":2311833.0},{"x":25.000000000000007,"y":1.813668E7}]
+Time taken: 47.58 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113333_75f04d70-bc09-4075-bf07-4ae186825e4c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0276, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0276/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0276
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2017-01-14 11:33:41,697 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:33:48,970 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.72 sec
+2017-01-14 11:33:56,254 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.97 sec
+MapReduce Total cumulative CPU time: 3 seconds 970 msec
+Ended Job = job_1483946879430_0276
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.97 sec   HDFS Read: 16075 HDFS Write: 224 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 970 msec
+OK
+[{"x":0.0,"y":1.0},{"x":1.0,"y":1.0},{"x":2.0,"y":1.0},{"x":3.0,"y":1.0},{"x":4.0,"y":1.0},{"x":5.0,"y":1.0},{"x":6.0,"y":1.0},{"x":7.0,"y":1.0},{"x":8.0,"y":1.0},{"x":9.0,"y":1.0},{"x":10.0,"y":1.0},{"x":11.0,"y":1.0},{"x":12.0,"y":1.0},{"x":13.0,"y":1.0},{"x":14.0,"y":1.0},{"x":15.0,"y":1.0},{"x":16.0,"y":1.0},{"x":17.0,"y":1.0},{"x":18.0,"y":1.0},{"x":19.0,"y":1.0},{"x":20.0,"y":1.0},{"x":21.0,"y":1.0},{"x":22.0,"y":1.0},{"x":23.0,"y":1.0},{"x":24.0,"y":1.0},{"x":25.0,"y":1.0}]
+Time taken: 24.336 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113333_33b6fb6f-b75e-4b9e-a76b-12e3fd7f31c5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0277, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0277/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0277
+Hadoop job information for Stage-1: number of mappers: 281; number of reducers: 1
+2017-01-14 11:34:06,687 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:34:34,574 Stage-1 map = 2%,  reduce = 0%, Cumulative CPU 2186.22 sec
+2017-01-14 11:34:35,618 Stage-1 map = 4%,  reduce = 0%, Cumulative CPU 2466.65 sec
+2017-01-14 11:34:36,673 Stage-1 map = 5%,  reduce = 0%, Cumulative CPU 2477.92 sec
+2017-01-14 11:34:38,746 Stage-1 map = 7%,  reduce = 0%, Cumulative CPU 2901.33 sec
+2017-01-14 11:34:47,107 Stage-1 map = 8%,  reduce = 0%, Cumulative CPU 3985.26 sec
+2017-01-14 11:34:48,144 Stage-1 map = 9%,  reduce = 0%, Cumulative CPU 4213.59 sec
+2017-01-14 11:34:50,229 Stage-1 map = 10%,  reduce = 0%, Cumulative CPU 4422.16 sec
+2017-01-14 11:34:51,265 Stage-1 map = 13%,  reduce = 0%, Cumulative CPU 4640.36 sec
+2017-01-14 11:34:54,401 Stage-1 map = 14%,  reduce = 0%, Cumulative CPU 5073.14 sec
+2017-01-14 11:35:02,823 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 6299.32 sec
+2017-01-14 11:35:03,865 Stage-1 map = 18%,  reduce = 0%, Cumulative CPU 6385.88 sec
+2017-01-14 11:35:05,946 Stage-1 map = 19%,  reduce = 0%, Cumulative CPU 6731.3 sec
+2017-01-14 11:35:06,981 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 6819.26 sec
+2017-01-14 11:35:14,245 Stage-1 map = 21%,  reduce = 0%, Cumulative CPU 7753.19 sec
+2017-01-14 11:35:15,321 Stage-1 map = 23%,  reduce = 0%, Cumulative CPU 8077.87 sec
+2017-01-14 11:35:18,453 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 8521.17 sec
+2017-01-14 11:35:19,507 Stage-1 map = 26%,  reduce = 0%, Cumulative CPU 8560.2 sec
+2017-01-14 11:35:21,616 Stage-1 map = 27%,  reduce = 0%, Cumulative CPU 8964.66 sec
+2017-01-14 11:35:25,855 Stage-1 map = 28%,  reduce = 0%, Cumulative CPU 9441.94 sec
+2017-01-14 11:35:26,929 Stage-1 map = 32%,  reduce = 0%, Cumulative CPU 9565.46 sec
+2017-01-14 11:35:28,018 Stage-1 map = 36%,  reduce = 0%, Cumulative CPU 9852.02 sec
+2017-01-14 11:35:29,104 Stage-1 map = 39%,  reduce = 0%, Cumulative CPU 9890.89 sec
+2017-01-14 11:35:30,206 Stage-1 map = 43%,  reduce = 0%, Cumulative CPU 9976.27 sec
+2017-01-14 11:35:31,260 Stage-1 map = 45%,  reduce = 0%, Cumulative CPU 10082.81 sec
+2017-01-14 11:35:32,309 Stage-1 map = 46%,  reduce = 0%, Cumulative CPU 10092.4 sec
+2017-01-14 11:35:33,386 Stage-1 map = 47%,  reduce = 0%, Cumulative CPU 10124.92 sec
+2017-01-14 11:35:34,444 Stage-1 map = 48%,  reduce = 0%, Cumulative CPU 10177.61 sec
+2017-01-14 11:35:35,506 Stage-1 map = 49%,  reduce = 0%, Cumulative CPU 10192.82 sec
+2017-01-14 11:35:36,570 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 10209.4 sec
+2017-01-14 11:35:37,640 Stage-1 map = 51%,  reduce = 0%, Cumulative CPU 10235.31 sec
+2017-01-14 11:35:52,307 Stage-1 map = 52%,  reduce = 0%, Cumulative CPU 12080.79 sec
+2017-01-14 11:35:53,358 Stage-1 map = 53%,  reduce = 0%, Cumulative CPU 12195.02 sec
+2017-01-14 11:35:55,448 Stage-1 map = 54%,  reduce = 0%, Cumulative CPU 12509.71 sec
+2017-01-14 11:35:56,488 Stage-1 map = 55%,  reduce = 0%, Cumulative CPU 12626.86 sec
+2017-01-14 11:35:57,522 Stage-1 map = 56%,  reduce = 0%, Cumulative CPU 12768.24 sec
+2017-01-14 11:35:59,602 Stage-1 map = 57%,  reduce = 0%, Cumulative CPU 13059.75 sec
+2017-01-14 11:36:01,673 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 13366.47 sec
+2017-01-14 11:36:06,858 Stage-1 map = 59%,  reduce = 0%, Cumulative CPU 14057.29 sec
+2017-01-14 11:36:07,913 Stage-1 map = 60%,  reduce = 0%, Cumulative CPU 14217.15 sec
+2017-01-14 11:36:10,000 Stage-1 map = 61%,  reduce = 0%, Cumulative CPU 14482.61 sec
+2017-01-14 11:36:11,061 Stage-1 map = 62%,  reduce = 0%, Cumulative CPU 14647.73 sec
+2017-01-14 11:36:12,112 Stage-1 map = 63%,  reduce = 0%, Cumulative CPU 14774.0 sec
+2017-01-14 11:36:13,147 Stage-1 map = 64%,  reduce = 0%, Cumulative CPU 14915.68 sec
+2017-01-14 11:36:18,431 Stage-1 map = 65%,  reduce = 0%, Cumulative CPU 15632.3 sec
+2017-01-14 11:36:21,584 Stage-1 map = 66%,  reduce = 0%, Cumulative CPU 16077.89 sec
+2017-01-14 11:36:22,643 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 16245.77 sec
+2017-01-14 11:36:23,678 Stage-1 map = 68%,  reduce = 0%, Cumulative CPU 16363.28 sec
+2017-01-14 11:36:25,761 Stage-1 map = 69%,  reduce = 0%, Cumulative CPU 16671.79 sec
+2017-01-14 11:36:27,881 Stage-1 map = 70%,  reduce = 0%, Cumulative CPU 16948.51 sec
+2017-01-14 11:36:29,995 Stage-1 map = 71%,  reduce = 0%, Cumulative CPU 17234.45 sec
+2017-01-14 11:36:34,192 Stage-1 map = 72%,  reduce = 0%, Cumulative CPU 17816.7 sec
+2017-01-14 11:36:35,231 Stage-1 map = 73%,  reduce = 0%, Cumulative CPU 17960.18 sec
+2017-01-14 11:36:38,351 Stage-1 map = 74%,  reduce = 0%, Cumulative CPU 18385.01 sec
+2017-01-14 11:36:39,386 Stage-1 map = 75%,  reduce = 0%, Cumulative CPU 18528.87 sec
+2017-01-14 11:36:40,419 Stage-1 map = 76%,  reduce = 0%, Cumulative CPU 18661.92 sec
+2017-01-14 11:36:41,453 Stage-1 map = 77%,  reduce = 0%, Cumulative CPU 18813.85 sec
+2017-01-14 11:36:43,519 Stage-1 map = 78%,  reduce = 0%, Cumulative CPU 19082.41 sec
+2017-01-14 11:36:44,552 Stage-1 map = 79%,  reduce = 0%, Cumulative CPU 19231.6 sec
+2017-01-14 11:36:46,618 Stage-1 map = 82%,  reduce = 0%, Cumulative CPU 19498.44 sec
+2017-01-14 11:36:47,651 Stage-1 map = 83%,  reduce = 0%, Cumulative CPU 19615.92 sec
+2017-01-14 11:36:48,684 Stage-1 map = 86%,  reduce = 0%, Cumulative CPU 19741.67 sec
+2017-01-14 11:36:49,718 Stage-1 map = 88%,  reduce = 0%, Cumulative CPU 19841.99 sec
+2017-01-14 11:36:50,761 Stage-1 map = 90%,  reduce = 0%, Cumulative CPU 19921.81 sec
+2017-01-14 11:36:51,794 Stage-1 map = 93%,  reduce = 0%, Cumulative CPU 20011.15 sec
+2017-01-14 11:36:52,828 Stage-1 map = 94%,  reduce = 0%, Cumulative CPU 20067.2 sec
+2017-01-14 11:36:53,862 Stage-1 map = 96%,  reduce = 0%, Cumulative CPU 20112.78 sec
+2017-01-14 11:36:54,897 Stage-1 map = 98%,  reduce = 0%, Cumulative CPU 20141.18 sec
+2017-01-14 11:36:55,931 Stage-1 map = 99%,  reduce = 0%, Cumulative CPU 20169.54 sec
+2017-01-14 11:37:01,097 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 20199.71 sec
+2017-01-14 11:37:03,165 Stage-1 map = 100%,  reduce = 67%, Cumulative CPU 20202.09 sec
+2017-01-14 11:37:04,197 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 20203.52 sec
+MapReduce Total cumulative CPU time: 0 days 5 hours 36 minutes 43 seconds 520 msec
+Ended Job = job_1483946879430_0277
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 281  Reduce: 1   Cumulative CPU: 20203.52 sec   HDFS Read: 34348208463 HDFS Write: 2660 SUCCESS
+Total MapReduce CPU Time Spent: 0 days 5 hours 36 minutes 43 seconds 520 msec
+OK
+[{"x":3321.0485403319935,"y":1.45663981E8},{"x":9982.74696045684,"y":2.06131063E8},{"x":16612.674159870145,"y":1.43566408E8},{"x":23317.453217132548,"y":1.49494161E8},{"x":29960.609649792827,"y":1.42975336E8},{"x":36375.01677600126,"y":1.38606926E8},{"x":42533.507437718334,"y":1.30951044E8},{"x":48146.29077104545,"y":1.15140835E8},{"x":53213.421023810944,"y":1.07619735E8},{"x":58248.483937163255,"y":1.12707585E8},{"x":63293.58483731394,"y":1.08141872E8},{"x":69018.94922664235,"y":1.43324361E8},{"x":75900.02367829326,"y":1.56779033E8},{"x":82946.15510646909,"y":1.51975266E8},{"x":89917.59000310431,"y":1.53295E8},{"x":96860.92462216361,"y":1.50768417E8},{"x":103609.52915977997,"y":1.44077199E8},{"x":109954.24250398218,"y":1.33854849E8},{"x":116123.88992970793,"y":1.3763683E8},{"x":122726.14112850674,"y":1.507318E8},{"x":129747.61164148252,"y":1.57137625E8},{"x":136715.06660150932,"y":1.47178479E8},{"x":143205.45059574212,"y":1.36842509E8},{"x":149607.59388875327,"y":1.41546888E8},{"x":155673.3832868219,"y":1.22718234E8},{"x":161642.88678065155,"y":1.36550451E8},{"x":168144.6030166261,"y":1.46959034E8},{"x":175053.34082164356,"y":1.53589227E8},{"x":182297.14874108907,"y":1.62394608E8},{"x":189326.15708572796,"y":1.43867958E8},{"x":195453.71056600843,"y":1.2335443E8},{"x":201209.5540891993,"y":1.28155398E8},{"x":207171.90091194247,"y":1.30779577E8},{"x":213466.04210476624,"y":1.44023287E8},{"x":220210.74423304116,"y":1.49565234E8},{"x":227145.77449547662,"y":1.52928787E8},{"x":234111.3892925417,"y":1.50324038E8},{"x":241083.72351541207,"y":1.53673192E8},{"x":248431.8474659434,"y":1.65202295E8},{"x":256042.59883441735,"y":1.66852006E8},{"x":263437.94519456336,"y":1.55864138E8},{"x":270111.5166586366,"y":1.35175419E8},{"x":276280.92525866255,"y":1.34426457E8},{"x":282326.04124034964,"y":1.29141649E8},{"x":288299.24028581934,"y":1.3109024E8},{"x":294234.998182567,"y":1.29531606E8},{"x":300033.1353389402,"y":1.24594797E8},{"x":306114.79762031615,"y":1.42902181E8},{"x":313049.0746148557,"y":1.60848918E8},{"x":320343.5895133573,"y":1.59895155E8},{"x":327340.8122776486,"y":1.46720516E8},{"x":333865.07843602274,"y":1.39331781E8},{"x":340335.0921166322,"y":1.45080367E8},{"x":347092.051629441,"y":1.50704645E8},{"x":354173.6765706535,"y":1.60465112E8},{"x":361256.14945520175,"y":1.49975796E8},{"x":367883.93975262827,"y":1.41039138E8},{"x":374398.78165550344,"y":1.44628845E8},{"x":381010.2709679192,"y":1.44978903E8},{"x":387574.0820713735,"y":1.43823191E8},{"x":394356.51419604494,"y":1.54186802E8},{"x":401463.0672565879,"y":1.57523689E8},{"x":408622.1079262143,"y":1.56835398E8},{"x":415896.27645815787,"y":1.6279118E8},{"x":423168.971334089,"y":1.5618123E8},{"x":430323.6274123622,"y":1.58045795E8},{"x":437439.38553509477,"y":1.55197447E8},{"x":444566.4376290437,"y":1.59304913E8},{"x":451703.4995686898,"y":1.55006337E8},{"x":458836.69263888395,"y":1.58394421E8},{"x":466440.23106927157,"y":1.76978658E8},{"x":474369.55368870136,"y":1.74284018E8},{"x":481984.39456518664,"y":1.6064222E8},{"x":489079.23389301944,"y":1.5113288E8},{"x":495800.7130607522,"y":1.44937776E8},{"x":501902.8127585879,"y":1.22881707E8},{"x":507105.688728807,"y":1.09402187E8},{"x":512801.3555682459,"y":1.414736E8},{"x":519544.69706827623,"y":1.55576709E8},{"x":526980.0582366373,"y":1.71534575E8},{"x":534219.5777030389,"y":1.49447468E8},{"x":540581.6660787134,"y":1.34235403E8},{"x":546950.6010957917,"y":1.47016712E8},{"x":553591.1419734963,"y":1.45959287E8},{"x":560204.0041463969,"y":1.43657065E8}]
+Time taken: 186.883 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113737_7f565a25-cf99-47c9-bd80-7bd3e357e796
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0278, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0278/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0278
+Hadoop job information for Stage-1: number of mappers: 281; number of reducers: 1
+2017-01-14 11:37:13,295 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:37:35,827 Stage-1 map = 1%,  reduce = 0%, Cumulative CPU 1712.81 sec
+2017-01-14 11:37:37,952 Stage-1 map = 3%,  reduce = 0%, Cumulative CPU 1884.81 sec
+2017-01-14 11:37:38,996 Stage-1 map = 7%,  reduce = 0%, Cumulative CPU 2150.47 sec
+2017-01-14 11:37:47,365 Stage-1 map = 10%,  reduce = 0%, Cumulative CPU 3261.48 sec
+2017-01-14 11:37:48,409 Stage-1 map = 14%,  reduce = 0%, Cumulative CPU 3471.34 sec
+2017-01-14 11:37:56,806 Stage-1 map = 17%,  reduce = 0%, Cumulative CPU 4643.06 sec
+2017-01-14 11:37:57,841 Stage-1 map = 18%,  reduce = 0%, Cumulative CPU 4785.04 sec
+2017-01-14 11:37:59,942 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 5101.36 sec
+2017-01-14 11:38:05,234 Stage-1 map = 21%,  reduce = 0%, Cumulative CPU 5700.14 sec
+2017-01-14 11:38:06,307 Stage-1 map = 22%,  reduce = 0%, Cumulative CPU 6042.88 sec
+2017-01-14 11:38:07,352 Stage-1 map = 23%,  reduce = 0%, Cumulative CPU 6104.34 sec
+2017-01-14 11:38:09,484 Stage-1 map = 27%,  reduce = 0%, Cumulative CPU 6500.59 sec
+2017-01-14 11:38:12,597 Stage-1 map = 28%,  reduce = 0%, Cumulative CPU 6946.92 sec
+2017-01-14 11:38:13,653 Stage-1 map = 29%,  reduce = 0%, Cumulative CPU 6991.38 sec
+2017-01-14 11:38:14,721 Stage-1 map = 33%,  reduce = 0%, Cumulative CPU 7088.19 sec
+2017-01-14 11:38:15,792 Stage-1 map = 35%,  reduce = 0%, Cumulative CPU 7357.09 sec
+2017-01-14 11:38:16,851 Stage-1 map = 41%,  reduce = 0%, Cumulative CPU 7419.58 sec
+2017-01-14 11:38:17,913 Stage-1 map = 48%,  reduce = 0%, Cumulative CPU 7506.4 sec
+2017-01-14 11:38:18,978 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 7558.12 sec
+2017-01-14 11:38:20,032 Stage-1 map = 51%,  reduce = 0%, Cumulative CPU 7560.82 sec
+2017-01-14 11:38:35,806 Stage-1 map = 52%,  reduce = 0%, Cumulative CPU 8995.95 sec
+2017-01-14 11:38:36,840 Stage-1 map = 53%,  reduce = 0%, Cumulative CPU 9110.56 sec
+2017-01-14 11:38:37,883 Stage-1 map = 54%,  reduce = 0%, Cumulative CPU 9251.53 sec
+2017-01-14 11:38:39,978 Stage-1 map = 55%,  reduce = 0%, Cumulative CPU 9542.38 sec
+2017-01-14 11:38:41,015 Stage-1 map = 56%,  reduce = 0%, Cumulative CPU 9678.17 sec
+2017-01-14 11:38:42,062 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 9858.09 sec
+2017-01-14 11:38:45,187 Stage-1 map = 59%,  reduce = 0%, Cumulative CPU 10287.04 sec
+2017-01-14 11:38:46,254 Stage-1 map = 60%,  reduce = 0%, Cumulative CPU 10400.28 sec
+2017-01-14 11:38:48,352 Stage-1 map = 61%,  reduce = 0%, Cumulative CPU 10719.39 sec
+2017-01-14 11:38:49,386 Stage-1 map = 62%,  reduce = 0%, Cumulative CPU 10824.32 sec
+2017-01-14 11:38:50,426 Stage-1 map = 63%,  reduce = 0%, Cumulative CPU 10977.7 sec
+2017-01-14 11:38:51,460 Stage-1 map = 64%,  reduce = 0%, Cumulative CPU 11144.33 sec
+2017-01-14 11:38:53,556 Stage-1 map = 65%,  reduce = 0%, Cumulative CPU 11406.22 sec
+2017-01-14 11:38:56,712 Stage-1 map = 66%,  reduce = 0%, Cumulative CPU 11842.84 sec
+2017-01-14 11:38:57,776 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 12011.0 sec
+2017-01-14 11:38:58,816 Stage-1 map = 68%,  reduce = 0%, Cumulative CPU 12109.19 sec
+2017-01-14 11:38:59,876 Stage-1 map = 69%,  reduce = 0%, Cumulative CPU 12274.66 sec
+2017-01-14 11:39:00,936 Stage-1 map = 70%,  reduce = 0%, Cumulative CPU 12438.43 sec
+2017-01-14 11:39:03,042 Stage-1 map = 71%,  reduce = 0%, Cumulative CPU 12722.11 sec
+2017-01-14 11:39:05,120 Stage-1 map = 72%,  reduce = 0%, Cumulative CPU 12971.74 sec
+2017-01-14 11:39:07,198 Stage-1 map = 73%,  reduce = 0%, Cumulative CPU 13297.83 sec
+2017-01-14 11:39:08,245 Stage-1 map = 74%,  reduce = 0%, Cumulative CPU 13401.77 sec
+2017-01-14 11:39:09,283 Stage-1 map = 75%,  reduce = 0%, Cumulative CPU 13571.48 sec
+2017-01-14 11:39:10,337 Stage-1 map = 76%,  reduce = 0%, Cumulative CPU 13727.73 sec
+2017-01-14 11:39:11,380 Stage-1 map = 77%,  reduce = 0%, Cumulative CPU 13847.47 sec
+2017-01-14 11:39:12,413 Stage-1 map = 79%,  reduce = 0%, Cumulative CPU 14003.39 sec
+2017-01-14 11:39:13,446 Stage-1 map = 80%,  reduce = 0%, Cumulative CPU 14149.88 sec
+2017-01-14 11:39:14,480 Stage-1 map = 82%,  reduce = 0%, Cumulative CPU 14262.81 sec
+2017-01-14 11:39:15,513 Stage-1 map = 85%,  reduce = 0%, Cumulative CPU 14406.8 sec
+2017-01-14 11:39:16,546 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 14517.56 sec
+2017-01-14 11:39:17,580 Stage-1 map = 91%,  reduce = 0%, Cumulative CPU 14613.45 sec
+2017-01-14 11:39:18,613 Stage-1 map = 94%,  reduce = 0%, Cumulative CPU 14700.08 sec
+2017-01-14 11:39:19,648 Stage-1 map = 97%,  reduce = 0%, Cumulative CPU 14762.08 sec
+2017-01-14 11:39:20,683 Stage-1 map = 99%,  reduce = 0%, Cumulative CPU 14788.89 sec
+2017-01-14 11:39:22,749 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 14807.38 sec
+2017-01-14 11:39:25,846 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 14811.02 sec
+MapReduce Total cumulative CPU time: 0 days 4 hours 6 minutes 51 seconds 20 msec
+Ended Job = job_1483946879430_0278
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 281  Reduce: 1   Cumulative CPU: 14811.02 sec   HDFS Read: 2881527547 HDFS Write: 2582 SUCCESS
+Total MapReduce CPU Time Spent: 0 days 4 hours 6 minutes 51 seconds 20 msec
+OK
+[{"x":18327.20754245181,"y":7.9748258E7},{"x":55491.871096415896,"y":8.309499E7},{"x":93679.65145973038,"y":8.6514844E7},{"x":132693.84664720012,"y":8.696316E7},{"x":171867.6487445463,"y":8.6146267E7},{"x":210670.7313527741,"y":8.5520489E7},{"x":249662.25934128402,"y":8.6540552E7},{"x":289796.5427301547,"y":9.0516028E7},{"x":329477.0066695927,"y":8.4739027E7},{"x":365566.2489117291,"y":7.4388651E7},{"x":397835.39461877843,"y":6.8541274E7},{"x":429750.9246861262,"y":7.2799605E7},{"x":465036.8414344201,"y":8.2797706E7},{"x":503518.30656080734,"y":8.7099424E7},{"x":543062.8468022498,"y":8.7475581E7},{"x":583427.3034806633,"y":9.0968424E7},{"x":624226.4422271781,"y":8.8999692E7},{"x":662707.1616941215,"y":8.1028515E7},{"x":698880.2691496223,"y":7.8719596E7},{"x":733518.7005788026,"y":7.4335363E7},{"x":767866.605735987,"y":7.736709E7},{"x":804007.5729041094,"y":7.8851928E7},{"x":841545.7203556062,"y":8.0669325E7},{"x":879719.9431514984,"y":8.1391546E7},{"x":918718.8373321064,"y":8.4489202E7},{"x":959767.1412341769,"y":8.996087E7},{"x":1001449.1512175596,"y":8.6972521E7},{"x":1041399.1159516271,"y":8.2863593E7},{"x":1079867.8542207691,"y":8.074003E7},{"x":1116922.8462326222,"y":7.6889701E7},{"x":1152963.0099091101,"y":7.6227668E7},{"x":1188521.048005459,"y":7.4615503E7},{"x":1223623.8223744007,"y":7.3804432E7},{"x":1259509.9426446995,"y":7.7353913E7},{"x":1296354.8111453364,"y":7.7620596E7},{"x":1332413.4213903388,"y":7.4949709E7},{"x":1367899.572222837,"y":7.5004735E7},{"x":1403663.4722769689,"y":7.5463994E7},{"x":1439258.645286469,"y":7.4629346E7},{"x":1475211.8627351027,"y":7.6735836E7},{"x":1512867.261595406,"y":8.1512074E7},{"x":1551539.6334870465,"y":8.1470239E7},{"x":1588850.2575565232,"y":8.8988835E7},{"x":1626197.1918086768,"y":8.8764279E7},{"x":1663315.117576966,"y":8.8174117E7},{"x":1701064.009927698,"y":9.1298197E7},{"x":1738157.699572861,"y":8.5260044E7},{"x":1772205.6172556514,"y":7.6776065E7},{"x":1803340.1239622503,"y":7.1675008E7},{"x":1834921.0111724348,"y":7.9025201E7},{"x":1869329.9998789523,"y":8.4610049E7},{"x":1905530.2141753277,"y":8.7739663E7},{"x":1942687.226673442,"y":8.9499161E7},{"x":1980462.6121994758,"y":9.0562862E7},{"x":2018249.0409250965,"y":8.9247012E7},{"x":2054847.715422526,"y":8.4935723E7},{"x":2090716.9722538146,"y":8.5748446E7},{"x":2127268.0510127763,"y":8.8750751E7},{"x":2166212.318844916,"y":9.6812716E7},{"x":2206240.228680321,"y":9.3851726E7},{"x":2246125.288796389,"y":9.6044919E7},{"x":2286511.185995687,"y":9.6387984E7},{"x":2327585.8201705753,"y":9.9481055E7},{"x":2367897.3880846365,"y":9.5668203E7},{"x":2403594.8660044605,"y":7.9626447E7},{"x":2433365.621937341,"y":6.7578818E7},{"x":2462775.0885418546,"y":7.8185989E7},{"x":2497784.6104039047,"y":9.3776812E7},{"x":2535986.3693078547,"y":9.431983E7},{"x":2573431.2714279373,"y":9.0363137E7},{"x":2608778.698508036,"y":8.4364515E7},{"x":2642624.1298603914,"y":8.2782265E7},{"x":2675942.372415095,"y":8.095604E7},{"x":2709536.564284406,"y":8.4758669E7},{"x":2745511.5637917253,"y":9.2720214E7},{"x":2783684.126569367,"y":9.6635308E7},{"x":2822827.9415662796,"y":9.7795548E7},{"x":2862242.737060058,"y":9.7570756E7},{"x":2900078.772984946,"y":8.9818837E7},{"x":2936133.0696469205,"y":8.9047157E7},{"x":2970241.902242119,"y":8.110641E7},{"x":3004120.579656648,"y":8.8182923E7},{"x":3039516.7178224833,"y":8.9085652E7},{"x":3075745.2898300407,"y":9.1042134E7},{"x":3112389.649366712,"y":8.9466522E7}]
+Time taken: 141.608 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114113939_7043eac9-52eb-4bb0-a908-0666d1c20f9a
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0279, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0279/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0279
+Hadoop job information for Stage-1: number of mappers: 170; number of reducers: 1
+2017-01-14 11:39:34,957 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:39:50,950 Stage-1 map = 8%,  reduce = 0%, Cumulative CPU 672.96 sec
+2017-01-14 11:39:52,007 Stage-1 map = 10%,  reduce = 0%, Cumulative CPU 836.23 sec
+2017-01-14 11:39:53,071 Stage-1 map = 11%,  reduce = 0%, Cumulative CPU 863.89 sec
+2017-01-14 11:39:54,164 Stage-1 map = 24%,  reduce = 0%, Cumulative CPU 1232.61 sec
+2017-01-14 11:39:55,224 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 1271.82 sec
+2017-01-14 11:39:56,281 Stage-1 map = 27%,  reduce = 0%, Cumulative CPU 1320.62 sec
+2017-01-14 11:39:57,323 Stage-1 map = 41%,  reduce = 0%, Cumulative CPU 1691.54 sec
+2017-01-14 11:39:58,370 Stage-1 map = 49%,  reduce = 0%, Cumulative CPU 1749.04 sec
+2017-01-14 11:39:59,407 Stage-1 map = 77%,  reduce = 0%, Cumulative CPU 1953.7 sec
+2017-01-14 11:40:00,470 Stage-1 map = 84%,  reduce = 0%, Cumulative CPU 2018.85 sec
+2017-01-14 11:40:08,762 Stage-1 map = 85%,  reduce = 0%, Cumulative CPU 2076.31 sec
+2017-01-14 11:40:09,798 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 2210.96 sec
+2017-01-14 11:40:11,867 Stage-1 map = 88%,  reduce = 0%, Cumulative CPU 2232.67 sec
+2017-01-14 11:40:12,901 Stage-1 map = 90%,  reduce = 28%, Cumulative CPU 2293.12 sec
+2017-01-14 11:40:13,935 Stage-1 map = 92%,  reduce = 28%, Cumulative CPU 2304.8 sec
+2017-01-14 11:40:14,982 Stage-1 map = 95%,  reduce = 28%, Cumulative CPU 2335.24 sec
+2017-01-14 11:40:16,018 Stage-1 map = 100%,  reduce = 29%, Cumulative CPU 2373.6 sec
+2017-01-14 11:40:18,087 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2375.75 sec
+MapReduce Total cumulative CPU time: 39 minutes 35 seconds 750 msec
+Ended Job = job_1483946879430_0279
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 170  Reduce: 1   Cumulative CPU: 2375.75 sec   HDFS Read: 703923634 HDFS Write: 2572 SUCCESS
+Total MapReduce CPU Time Spent: 39 minutes 35 seconds 750 msec
+OK
+[{"x":18695.235948967398,"y":1.4083787E7},{"x":56741.47874825342,"y":1.4798972E7},{"x":95994.33111129003,"y":1.5515001E7},{"x":133319.73162730827,"y":1.3135133E7},{"x":164511.98495256103,"y":1.0783563E7},{"x":195290.8498466483,"y":1.299305E7},{"x":231266.15650320178,"y":1.4429577E7},{"x":268417.1179201465,"y":1.4009684E7},{"x":306198.5093553765,"y":1.4866424E7},{"x":345589.4953554167,"y":1.5212887E7},{"x":383060.45859418187,"y":1.353974E7},{"x":417816.46257911937,"y":1.3085716E7},{"x":451364.0908170575,"y":1.2400754E7},{"x":483923.7753188772,"y":1.2683046E7},{"x":519451.556119028,"y":1.4514907E7},{"x":560423.5618755877,"y":1.6848979E7},{"x":602680.207829019,"y":1.5580875E7},{"x":642452.2984299114,"y":1.471702E7},{"x":680082.5835287694,"y":1.4103781E7},{"x":719301.713751083,"y":1.5850446E7},{"x":760781.4881132275,"y":1.6013014E7},{"x":801816.140851152,"y":1.4852665E7},{"x":839869.7391783464,"y":1.3799878E7},{"x":877150.8844929135,"y":1.4104018E7},{"x":915910.1459708716,"y":1.4879441E7},{"x":955744.2904553672,"y":1.4958546E7},{"x":995981.1326241569,"y":1.5245337E7},{"x":1036998.5396897848,"y":1.5445699E7},{"x":1076773.72611221,"y":1.438779E7},{"x":1113752.2622234644,"y":1.3284383E7},{"x":1148463.7855178057,"y":1.2741636E7},{"x":1182613.565331298,"y":1.2849591E7},{"x":1218593.754785965,"y":1.3913853E7},{"x":1256689.0178522032,"y":1.4418834E7},{"x":1294473.752321493,"y":1.3735427E7},{"x":1332819.4397891434,"y":1.4818749E7},{"x":1373879.9572996274,"y":1.5948058E7},{"x":1414409.2132882117,"y":1.4189415E7},{"x":1450774.5441432712,"y":1.276831E7},{"x":1481703.914791684,"y":1.0141499E7},{"x":1511083.1436958858,"y":1.2148455E7},{"x":1545781.1587441477,"y":1.3703012E7},{"x":1582597.051357706,"y":1.4545586E7},{"x":1617296.5576652514,"y":1.3257697E7},{"x":1650794.4153079109,"y":1.3263701E7},{"x":1683613.6548291314,"y":1.28905E7},{"x":1718143.652086892,"y":1.4999553E7},{"x":1756841.3180178953,"y":1.6001203E7},{"x":1796501.3632670767,"y":1.5736218E7},{"x":1835453.518371032,"y":1.5298021E7},{"x":1874498.2295655159,"y":1.5896586E7},{"x":1914850.6839954637,"y":1.6407369E7},{"x":1955593.2418866123,"y":1.6146222E7},{"x":1995375.4292134189,"y":1.5683454E7},{"x":2033483.3712752454,"y":1.4683066E7},{"x":2070263.5090325866,"y":1.4669263E7},{"x":2105042.030743183,"y":1.3039703E7},{"x":2134828.636271758,"y":1.0986928E7},{"x":2164147.855801878,"y":1.2438186E7},{"x":2197369.6850497983,"y":1.4025443E7},{"x":2234444.286400473,"y":1.5635843E7},{"x":2273411.8206467764,"y":1.5625351E7},{"x":2312539.885790413,"y":1.5605906E7},{"x":2352475.723469621,"y":1.6435941E7},{"x":2392185.1379037574,"y":1.593929E7},{"x":2429933.095154129,"y":1.484359E7},{"x":2465437.5938791167,"y":1.4002907E7},{"x":2500728.6534330463,"y":1.4774551E7},{"x":2538240.071195999,"y":1.5860342E7},{"x":2579545.4923289465,"y":1.801918E7},{"x":2621923.4738873765,"y":1.6477666E7},{"x":2661876.700936637,"y":1.6109533E7},{"x":2700043.9898685412,"y":1.4985216E7},{"x":2735059.731366586,"y":1.3564631E7},{"x":2768001.839327022,"y":1.366124E7},{"x":2803594.8227973827,"y":1.5357697E7},{"x":2843136.0454007545,"y":1.6879055E7},{"x":2864807.5750901746,"y":98395.0},{"x":2887204.166791842,"y":1.9031542E7},{"x":2930856.3353450596,"y":1.6943628E7},{"x":2969126.3913862137,"y":1.4241227E7},{"x":3003341.306968113,"y":1.3861873E7},{"x":3038282.6916905786,"y":1.5084752E7},{"x":3075092.3647890813,"y":1.5328197E7},{"x":3112212.030342403,"y":1.4803933E7}]
+Time taken: 53.315 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114114040_0f01d7b8-34b6-409d-aa94-16b4c7dc8829
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0280, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0280/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0280
+Hadoop job information for Stage-1: number of mappers: 8; number of reducers: 1
+2017-01-14 11:40:27,864 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:40:35,133 Stage-1 map = 13%,  reduce = 0%, Cumulative CPU 2.7 sec
+2017-01-14 11:40:36,170 Stage-1 map = 88%,  reduce = 0%, Cumulative CPU 22.24 sec
+2017-01-14 11:40:37,208 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 26.65 sec
+2017-01-14 11:40:43,440 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 29.09 sec
+MapReduce Total cumulative CPU time: 29 seconds 90 msec
+Ended Job = job_1483946879430_0280
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 8  Reduce: 1   Cumulative CPU: 29.09 sec   HDFS Read: 11630728 HDFS Write: 2247 SUCCESS
+Total MapReduce CPU Time Spent: 29 seconds 90 msec
+OK
+[{"x":3317.19987489493,"y":51157.0},{"x":10040.653026565264,"y":273214.0},{"x":17364.250547858705,"y":53846.0},{"x":24020.646250243874,"y":46123.0},{"x":30594.54925287704,"y":48921.0},{"x":37337.66810543847,"y":49811.0},{"x":44813.86139788175,"y":59862.0},{"x":51973.8234019277,"y":48449.0},{"x":57908.80495956321,"y":39197.0},{"x":63698.63002023831,"y":44470.0},{"x":69901.61550499077,"y":47288.0},{"x":75590.59357342585,"y":35042.0},{"x":80547.69662948127,"y":41952.0},{"x":86606.52767505181,"y":49214.0},{"x":93497.55794585712,"y":51272.0},{"x":100396.11472412899,"y":51419.0},{"x":106942.48427060727,"y":45202.0},{"x":112961.31224761366,"y":43584.0},{"x":118930.22870131064,"y":43336.0},{"x":124926.30963645122,"y":47559.0},{"x":131870.4603049721,"y":53382.0},{"x":139588.90432369738,"y":63788.0},{"x":147448.35463750135,"y":46814.0},{"x":154317.0570005988,"y":48403.0},{"x":162870.50537267106,"y":70263.0},{"x":171151.42453627294,"y":49706.0},{"x":178367.0051880675,"y":50115.0},{"x":185307.40323596977,"y":49197.0},{"x":192629.88344758237,"y":53684.0},{"x":199137.42320527672,"y":38655.0},{"x":205131.67660349136,"y":45588.0},{"x":212024.48806566783,"y":51532.0},{"x":219522.77389729343,"y":54661.0},{"x":227424.7781837255,"y":57205.0},{"x":234651.14640989352,"y":44553.0},{"x":240239.3368839042,"y":37271.0},{"x":246542.53916451673,"y":48475.0},{"x":253361.25031904364,"y":47799.0},{"x":260646.66761007937,"y":55119.0},{"x":266148.65631402447,"y":21476.0},{"x":271151.69506268343,"y":52883.0},{"x":278204.5693375121,"y":43382.0},{"x":284578.6395834972,"y":50708.0},{"x":290978.62134751567,"y":46441.0},{"x":297003.8111152744,"y":45361.0},{"x":304159.49037946376,"y":61587.0},{"x":311495.7487297922,"y":51960.0},{"x":317995.78298194654,"y":47526.0},{"x":324392.6588558026,"y":47754.0},{"x":329369.6103633414,"y":27192.0},{"x":334225.824208469,"y":50156.0},{"x":341010.2033852972,"y":52344.0},{"x":347787.91862538847,"y":49905.0},{"x":354114.31786673126,"y":40970.0},{"x":359163.16399046587,"y":41539.0},{"x":365461.5120198695,"y":52746.0},{"x":372089.7022394836,"y":47377.0},{"x":377657.6393740902,"y":38472.0},{"x":382603.8649151358,"y":38709.0},{"x":388052.3446706529,"y":45484.0},{"x":394220.9014145896,"y":50474.0},{"x":401742.3606189367,"y":62365.0},{"x":409155.58129565883,"y":49689.0},{"x":415678.9940311402,"y":50931.0},{"x":422515.09444842173,"y":51679.0},{"x":429371.8064321129,"y":56249.0},{"x":436848.06050538254,"y":61102.0},{"x":443842.75980692555,"y":52208.0},{"x":450509.7929430909,"y":51609.0},{"x":457047.2916682865,"y":51394.0},{"x":463829.2526669595,"y":54744.0},{"x":470737.42639612197,"y":55493.0},{"x":477807.5695456791,"y":56524.0},{"x":485095.59745725687,"y":57261.0},{"x":492210.45813751325,"y":56387.0},{"x":499144.0359792406,"y":54726.0},{"x":505948.24823668785,"y":53167.0},{"x":511597.5667896864,"y":39018.0},{"x":517537.36653081904,"y":54964.0},{"x":524461.5676206313,"y":56536.0},{"x":531469.7669530924,"y":54813.0},{"x":538234.8689441812,"y":53977.0},{"x":544974.9700744848,"y":53299.0},{"x":552020.0271626122,"y":60598.0},{"x":559500.7884835901,"y":60175.0}]
+Time taken: 25.249 seconds, Fetched: 1 row(s)
+Query ID = hdfs_20170114114040_d9897a49-e89d-45b3-ba0b-d763fa5d0648
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1483946879430_0281, Tracking URL = http://bigdata101:8088/proxy/application_1483946879430_0281/
+Kill Command = /opt/cloudera/parcels/CDH-5.8.3-1.cdh5.8.3.p0.2/lib/hadoop/bin/hadoop job  -kill job_1483946879430_0281
+Hadoop job information for Stage-1: number of mappers: 245; number of reducers: 1
+2017-01-14 11:40:53,466 Stage-1 map = 0%,  reduce = 0%
+2017-01-14 11:41:08,453 Stage-1 map = 1%,  reduce = 0%, Cumulative CPU 58.89 sec
+2017-01-14 11:41:09,525 Stage-1 map = 9%,  reduce = 0%, Cumulative CPU 725.37 sec
+2017-01-14 11:41:10,590 Stage-1 map = 10%,  reduce = 0%, Cumulative CPU 835.75 sec
+2017-01-14 11:41:11,668 Stage-1 map = 11%,  reduce = 0%, Cumulative CPU 875.61 sec
+2017-01-14 11:41:12,741 Stage-1 map = 24%,  reduce = 0%, Cumulative CPU 1254.13 sec
+2017-01-14 11:41:13,789 Stage-1 map = 27%,  reduce = 0%, Cumulative CPU 1295.83 sec
+2017-01-14 11:41:14,830 Stage-1 map = 52%,  reduce = 0%, Cumulative CPU 1516.5 sec
+2017-01-14 11:41:15,895 Stage-1 map = 58%,  reduce = 0%, Cumulative CPU 1586.53 sec
+2017-01-14 11:41:26,473 Stage-1 map = 62%,  reduce = 0%, Cumulative CPU 1791.85 sec
+2017-01-14 11:41:27,527 Stage-1 map = 68%,  reduce = 0%, Cumulative CPU 2099.75 sec
+2017-01-14 11:41:28,567 Stage-1 map = 72%,  reduce = 0%, Cumulative CPU 2270.76 sec
+2017-01-14 11:41:29,605 Stage-1 map = 75%,  reduce = 0%, Cumulative CPU 2375.04 sec
+2017-01-14 11:41:30,637 Stage-1 map = 87%,  reduce = 0%, Cumulative CPU 2565.52 sec
+2017-01-14 11:41:31,670 Stage-1 map = 98%,  reduce = 0%, Cumulative CPU 2663.95 sec
+2017-01-14 11:41:32,702 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2676.17 sec
+2017-01-14 11:41:38,912 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2679.45 sec
+MapReduce Total cumulative CPU time: 44 minutes 39 seconds 450 msec
+Ended Job = job_1483946879430_0281
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 245  Reduce: 1   Cumulative CPU: 2679.45 sec   HDFS Read: 3140495984 HDFS Write: 2579 SUCCESS
+Total MapReduce CPU Time Spent: 44 minutes 39 seconds 450 msec
+OK
+[{"x":3319.176300401695,"y":1.4111505E7},{"x":10028.754375721493,"y":7.4863768E7},{"x":16807.483373601277,"y":1.3473092E7},{"x":23460.077115775166,"y":1.33932E7},{"x":29957.214300211606,"y":1.3105806E7},{"x":36066.52999314239,"y":1.197207E7},{"x":42376.58509275555,"y":1.3780092E7},{"x":48512.37483985119,"y":1.1504932E7},{"x":54978.69421329369,"y":1.481309E7},{"x":62202.19332883338,"y":1.4587074E7},{"x":69473.76867192643,"y":1.4991008E7},{"x":76505.76858303757,"y":1.3681119E7},{"x":82391.20245248325,"y":1.021903E7},{"x":87414.31756408127,"y":1.0673049E7},{"x":93436.44471342076,"y":1.3888868E7},{"x":100497.71198955036,"y":1.5111292E7},{"x":107848.80322626476,"y":1.4972918E7},{"x":115186.08434676593,"y":1.4995323E7},{"x":122454.624828281,"y":1.4690441E7},{"x":128892.0076654436,"y":1.1537753E7},{"x":135289.90703400422,"y":1.447895E7},{"x":142526.8100830175,"y":1.4584999E7},{"x":149883.37190662004,"y":1.3699377E7},{"x":156933.06391442812,"y":1.3284872E7},{"x":163028.33880531514,"y":1.0319844E7},{"x":169151.30306166434,"y":1.327317E7},{"x":176150.19780568036,"y":1.3594741E7},{"x":183316.9412102213,"y":1.4200853E7},{"x":190463.7896667756,"y":1.3593492E7},{"x":196892.85336968213,"y":1.1506679E7},{"x":202643.63576964856,"y":1.0607658E7},{"x":208516.26079980363,"y":1.2187582E7},{"x":215196.51136613433,"y":1.3567981E7},{"x":221695.65982991655,"y":1.1607855E7},{"x":228048.68329806827,"y":1.3230955E7},{"x":234928.09705046436,"y":1.3368478E7},{"x":241434.7378539229,"y":1.1706599E7},{"x":247999.34260255846,"y":1.3917272E7},{"x":254833.62950031328,"y":1.2626537E7},{"x":261454.14243833168,"y":1.3075455E7},{"x":267520.87754926155,"y":1.0347108E7},{"x":272875.45293834776,"y":1.0324999E7},{"x":278033.56436428963,"y":9672747.0},{"x":283861.3512807452,"y":1.3452989E7},{"x":289896.2284096583,"y":1.1532402E7},{"x":295930.89550721046,"y":1.3604087E7},{"x":302227.21872422943,"y":1.2509204E7},{"x":308685.29439444706,"y":1.4566912E7},{"x":315939.68896061927,"y":1.5647935E7},{"x":323225.3074479227,"y":1.4846716E7},{"x":330121.89605788776,"y":1.4041941E7},{"x":336228.36956447177,"y":1.1527791E7},{"x":342361.51008282206,"y":1.4055588E7},{"x":349381.7705379015,"y":1.5155784E7},{"x":356686.39727660804,"y":1.5441853E7},{"x":363993.8404390957,"y":1.5083883E7},{"x":371268.8891297182,"y":1.5250525E7},{"x":378727.95327719074,"y":1.624348E7},{"x":386395.57078489865,"y":1.5903844E7},{"x":393911.0456438504,"y":1.5534776E7},{"x":400961.1072183949,"y":1.4170115E7},{"x":408003.36590797524,"y":1.5369736E7},{"x":415190.1433434355,"y":1.4726262E7},{"x":421519.6749398771,"y":1.1834663E7},{"x":427780.10728521075,"y":1.5034374E7},{"x":434735.41840063443,"y":1.5071306E7},{"x":441234.9594384235,"y":1.3059182E7},{"x":447726.75327137066,"y":1.5100092E7},{"x":454349.7509729528,"y":1.3348783E7},{"x":460309.4728660811,"y":1.3133636E7},{"x":466519.5292978336,"y":1.3717772E7},{"x":472241.1308508884,"y":1.155192E7},{"x":477562.54505472607,"y":1.1873782E7},{"x":483614.7054455986,"y":1.4431178E7},{"x":489883.6879649851,"y":1.2816129E7},{"x":496164.31617353065,"y":1.4631307E7},{"x":502926.9401548948,"y":1.5176045E7},{"x":509238.00596655294,"y":1.3028628E7},{"x":515821.2470559726,"y":1.6090718E7},{"x":522914.7015378255,"y":1.5338922E7},{"x":530049.0068005347,"y":1.6187257E7},{"x":537327.424644493,"y":1.6042325E7},{"x":544846.8886875478,"y":1.7280349E7},{"x":552736.2240616413,"y":1.812794E7},{"x":560104.7572136056,"y":1.3991789E7}]
+Time taken: 54.387 seconds, Fetched: 1 row(s)
