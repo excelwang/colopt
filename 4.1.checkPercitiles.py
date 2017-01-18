@@ -3,7 +3,7 @@ import commands
 import re
 import sys
 
-partitionNum=12
+partitionNum=23
 table=sys.argv[1] if len(sys.argv)>1 else 'test_joined_keys'
 key=sys.argv[2] if len(sys.argv)>2 else 'k'
 
