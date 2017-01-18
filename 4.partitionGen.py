@@ -20,7 +20,7 @@ joinedFields=["web_sales.ws_item_sk","item.i_item_sk"] #q29:
 #joinedFields=["product_reviews.pr_item_sk","web_sales.ws_item_sk"] #q11
 
 bucketsFolder='stats/buckets/'
-reduceNum=1000
+reduceNum=140
 debug=True
 
 totalWorkload=0
