@@ -1,4 +1,4 @@
 .DS_Store
 stats
 *nohup.out
-nohup.out.3
+nohup.out.*
